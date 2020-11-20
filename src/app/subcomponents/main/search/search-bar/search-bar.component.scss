@@ -1,0 +1,10 @@
+@import "../../../../../assets/global-style-variables/variables.scss";
+
+.search-bar-container {
+	width: 90%;
+	height: 3em;
+	margin: 1em auto 3em auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}

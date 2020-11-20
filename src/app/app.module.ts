@@ -1,3 +1,4 @@
+import { SearchComponent } from "./subcomponents/main/search/search/search.component";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
@@ -23,6 +24,7 @@ import Utils from "../utils/utils";
 		DetailsSidebarComponent,
 		TransactionsByDateComponent,
 		SearchBarComponent,
+		SearchComponent,
 		MainComponent,
 		WalletComponent,
 		TransactionComponent,
