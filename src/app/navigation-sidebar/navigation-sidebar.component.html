@@ -1,1 +1,36 @@
-<p>navigation-sidebar works!</p>
+<nav>
+	<a [routerLink]="'/'" routerLinkActive="active" class="branding-container">
+		<img
+			src="/assets/branding/logo.png"
+			alt="Your Brand's Logo"
+			class="logo-mark"
+		/>
+		<strong class="brand-name"> Noir Dashboard</strong>
+	</a>
+	<ul class="main-menu">
+		<li
+			class="menu-item"
+			*ngFor="let navItem of mainMenu"
+			routerLinkActive="active"
+			[routerLinkActiveOptions]="{ exact: true }"
+		>
+			<a [routerLink]="navItem?.NavRoute" class="main-menu-links"
+				><i
+					class="icon"
+					[innerHTML]="makeSvgCodeSafe(navItem?.IconSvgString)"
+				></i
+				><p class="nav-name"> {{ navItem?.MenuTitle }} </p></a
+			></li
+		>
+	</ul>
+	<div class="card annual-report-card">
+		<div class="report">
+			<i class="annual-report-icon" [innerHTML]="annualReportIcon"></i>
+			<strong class="annual-report-title">Annual Report</strong>
+			<small class="annual-report-desc">Annually detailed report</small>
+		</div>
+		<button id="downloadAnnualReport" class="download-annual-report-button"
+			>Download</button
+		>
+	</div>
+</nav>

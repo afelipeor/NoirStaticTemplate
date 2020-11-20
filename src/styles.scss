@@ -13,15 +13,6 @@
 //
 //
 
-html,
-body {
-	background-repeat: no-repeat;
-	background-position: 0px;
-	background-size: cover;
-	color: $text-color;
-	overflow: hidden;
-}
-
 html {
 	min-width: $html-width;
 	width: $html-width;
@@ -38,35 +29,31 @@ html {
 	display: flex;
 	justify-content: space-evenly;
 	flex-direction: column;
-}
+	&,
+	body {
+		background-repeat: no-repeat;
+		background-position: 0px;
+		background-size: cover;
+		color: $text-color;
+		overflow: hidden;
+	}
+	body {
+		margin: 1em auto;
+		flex-direction: column;
+		min-width: $body-width;
+		width: $body-width;
+		max-width: $body-width;
+		min-height: $body-height;
+		height: $body-height;
+		max-height: $body-height;
+		border-radius: 2em;
+		border: 2px solid rgba(255, 255, 255, 0.7);
+		background-color: rgba(255, 255, 255, 0.5);
 
-body {
-	margin: 1em auto;
-	flex-direction: column;
-	min-width: $body-width;
-	width: $body-width;
-	max-width: $body-width;
-	min-height: $body-height;
-	height: $body-height;
-	max-height: $body-height;
-	border-radius: 2em;
-	border: 2px solid rgba(255, 255, 255, 0.7);
-	background-color: rgba(255, 255, 255, 0.3);
-}
-
-a {
-	color: $accent-color;
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: line-through;
-	background-color: $accent-shade;
-	color: $text-shade;
-}
-
-h1 {
-	color: $pop-color;
-	font-size: 3.4em;
-	font-weight: 100;
+		h1 {
+			color: $pop-color;
+			font-size: 3.4em;
+			font-weight: 100;
+		}
+	}
 }

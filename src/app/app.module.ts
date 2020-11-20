@@ -9,6 +9,11 @@ import { DetailsSidebarComponent } from "./details-sidebar/details-sidebar.compo
 import { TransactionsByDateComponent } from "./subcomponents/details/transactions-by-date/transactions-by-date.component";
 import { SearchBarComponent } from "./subcomponents/main/search/search-bar/search-bar.component";
 import { MainComponent } from "./main/main.component";
+import { WalletComponent } from "./subcomponents/main/wallet/wallet.component";
+import { TransactionComponent } from "./subcomponents/main/transaction/transaction.component";
+import { ProfileComponent } from "./subcomponents/main/profile/profile.component";
+import { PaymentComponent } from "./subcomponents/main/payment/payment.component";
+import Utils from "../utils/utils";
 
 @NgModule({
 	declarations: [
@@ -19,9 +24,13 @@ import { MainComponent } from "./main/main.component";
 		TransactionsByDateComponent,
 		SearchBarComponent,
 		MainComponent,
+		WalletComponent,
+		TransactionComponent,
+		ProfileComponent,
+		PaymentComponent,
 	],
 	imports: [BrowserModule, AppRoutingModule],
-	providers: [],
+	providers: [Utils],
 	bootstrap: [AppComponent],
 })
 export class AppModule {}

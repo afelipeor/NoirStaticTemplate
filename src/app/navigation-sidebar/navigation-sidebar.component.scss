@@ -1,0 +1,137 @@
+@import "../../assets/global-style-variables/variables.scss";
+nav {
+	display: flex;
+	width: 20%;
+	height: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 1em 0;
+
+	a {
+		text-decoration: none;
+
+		&:visited {
+			color: $link-color;
+		}
+	}
+
+	.branding-container {
+		display: flex;
+		flex-direction: row;
+		width: 90%;
+		margin: 1em auto;
+		vertical-align: middle;
+		justify-content: space-between;
+
+		img {
+			width: 2em;
+			height: 2em;
+			overflow: hidden;
+		}
+
+		.brand-name {
+			font-size: 1em;
+		}
+	}
+
+	.main-menu {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+
+		.menu-item {
+			border-left-style: inset;
+			border-left-width: 0.5em;
+			border-left-color: rgba(255, 255, 255, 0);
+
+			&.active {
+				border-left-color: $link-color;
+				.main-menu-links {
+					color: $link-color;
+					.nav-name {
+						font-weight: 600;
+					}
+				}
+			}
+
+			.main-menu-links {
+				width: 90%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				vertical-align: middle;
+				font-weight: 400;
+				padding: 0.5em;
+				margin: auto;
+				color: $inactive-text;
+
+				&:hover {
+					border-left-color: $link-shade;
+
+					.nav-name {
+						font-weight: 600;
+					}
+				}
+
+				.icon {
+					display: flex;
+				}
+
+				.nav-name {
+					display: flex;
+					margin: auto 0;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+
+	.annual-report-card {
+		background-color: $inset-background-color;
+		width: 85%;
+		margin: 1em auto;
+		padding: 1em;
+		border-radius: 2em;
+		min-height: 20em;
+		border-style: solid;
+		border-width: 2px;
+		border-color: $inverted-text-color;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		box-shadow: inset 1px 1px 2px $card-shadow-color;
+
+		.report {
+			text-align: center;
+			justify-content: center;
+			display: flex;
+			flex-direction: column;
+
+			.annual-report-icon {
+				margin: 0 auto;
+			}
+			.annual-report-title {
+				font-size: 1em;
+				margin: 0.5em auto;
+				color: $text-color;
+			}
+
+			.annual-report-desc {
+				font-size: 0.8em;
+			}
+		}
+
+		.download-annual-report-button {
+			padding: 1em;
+			border-radius: 1em;
+			font-size: 0.8em;
+			background-color: $link-color;
+			border: none;
+			color: $inverted-text-color;
+			text-transform: uppercase;
+			font-weight: 600;
+			box-shadow: 0px 3px 7px $card-shadow-color;
+		}
+	}
+}
