@@ -1,1 +1,72 @@
+//
+//
+// Imports
+//
+//
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,700;1,200;1,400;1,700&display=swap");
+@import "./assets/global-style-variables/browser-reset.scss";
 @import "./assets/global-style-variables/variables.scss";
+
+//
+//
+//Global Styles
+//
+//
+
+html,
+body {
+	background-repeat: no-repeat;
+	background-position: 0px;
+	background-size: cover;
+	color: $text-color;
+	overflow: hidden;
+}
+
+html {
+	min-width: $html-width;
+	width: $html-width;
+	max-width: $html-width;
+	min-height: $html-height;
+	height: $html-height;
+	max-height: $html-height;
+	background: linear-gradient(
+		90deg,
+		$background-gradient-light 0%,
+		$background-gradient-blue 20%,
+		$background-gradient-pink 80%
+	);
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+}
+
+body {
+	margin: 1em auto;
+	flex-direction: column;
+	min-width: $body-width;
+	width: $body-width;
+	max-width: $body-width;
+	min-height: $body-height;
+	height: $body-height;
+	max-height: $body-height;
+	border-radius: 2em;
+	border: 2px solid rgba(255, 255, 255, 0.7);
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+a {
+	color: $accent-color;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: line-through;
+	background-color: $accent-shade;
+	color: $text-shade;
+}
+
+h1 {
+	color: $pop-color;
+	font-size: 3.4em;
+	font-weight: 100;
+}
