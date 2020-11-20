@@ -30,17 +30,59 @@
 					><a href="#contact" class="main-menu-links">Contact</a></li
 				>
 			</ul>
+			<div class="card annual-report-card">
+				<div class="report"></div>
+				<button
+					id="downloadAnnualReport"
+					class="download-annual-report-button"
+				></button>
+			</div>
 		</nav>
 
 		<section id="main">
+			<div class="search-section">
+				<label for="searchBox">
+					<img src="" alt="Search icon" class="search-icon" />
+					<input type="text" id="searchBox" />
+				</label>
+				<button class="notification-bell"></button>
+				<button class="search-menu"></button>
+			</div>
 			<div id="dash" class="dashboard">
-				<div class="card"></div>
-				<div class="card"></div>
-				<div class="card"></div>
+				<h1 class="section-title">Dashboard</h1>
+				<div class="card balance-card"></div>
+				<div class="card exchange-rates-card"></div>
+				<div class="card history-card"></div>
+				<div class="card efficiency-card"></div>
 			</div>
 		</section>
 		<section id="details">
-			<aside class="extra-info"></aside>
+			<aside class="extra-info">
+				<button id="settings" class="settings-button"></button
+				><button id="close" class="close-button"></button>
+				<div class="profile-section">
+					<ul class="action-bar">
+						<li class="action-bar-item"></li>
+						<li class="action-bar-item"></li>
+						<li class="action-bar-item"></li>
+						<li class="action-bar-item"></li>
+					</ul>
+				</div>
+				<div class="recent-transactions-section">
+					<div class="transactions-by-date-container"
+						><strong class="date-of-transactions"></strong
+						><div class="transaction-card">
+							<img src="" alt="" class="profile-img" />
+							<div class="info-container">
+								<p class="name"></p>
+								<p class="transaction-made"></p>
+							</div>
+							<div class="transaction-value-container"
+								><strong class="transaction-value"></strong
+							></div> </div
+					></div>
+				</div>
+			</aside>
 		</section>
 	</body>
 	<footer>
