@@ -21,16 +21,21 @@ nav {
 		width: 90%;
 		margin: 1em auto;
 		vertical-align: middle;
-		justify-content: space-between;
+		justify-content: space-evenly;
 
 		img {
 			width: 2em;
 			height: 2em;
 			overflow: hidden;
+			background-color: white;
+			border-radius: 0.5em;
+			display: flex;
 		}
 
 		.brand-name {
-			font-size: 1em;
+			font-size: 1.3em;
+			display: flex;
+			margin: auto 0;
 		}
 	}
 
