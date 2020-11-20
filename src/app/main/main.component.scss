@@ -1,0 +1,18 @@
+@import "../../assets/global-style-variables/variables.scss";
+
+.main-container {
+	background-color: $inset-background-color;
+	height: calc(100% - 2em);
+	width: 100%;
+	margin: auto;
+	display: flex;
+	justify-self: center;
+	overflow: auto;
+	border-radius: 2em;
+	box-shadow: inset 1px 2px 5px $card-shadow-color;
+	border-style: solid;
+	border-width: 2px;
+	border-color: $inverted-text-color rgba(255, 255, 255, 0.3)
+		rgba(255, 255, 255, 0.3) $inverted-text-color;
+	padding: 2em;
+}
