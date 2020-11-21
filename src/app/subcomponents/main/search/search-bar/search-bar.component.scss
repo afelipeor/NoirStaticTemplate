@@ -2,9 +2,15 @@
 
 .search-bar-container {
 	width: 90%;
-	height: 3em;
+	height: 4em;
 	margin: 1em auto 3em auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+
+	app-search {
+		width: 60%;
+		height: 100%;
+		display: flex;
+	}
 }

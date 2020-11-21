@@ -1,0 +1,38 @@
+@import "../../../../../assets/global-style-variables/variables.scss";
+
+.search-box {
+	background-color: rgba(255, 255, 255, 0.3);
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 2em;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0 2em;
+
+	.search-icon {
+		background: transparent;
+		width: 3em;
+		height: 3em;
+		overflow: hidden;
+		display: flex;
+		margin: auto 0;
+	}
+
+	input {
+		background: transparent;
+		font-size: 1em;
+		padding: 0.3em;
+		height: 60%;
+		line-height: 1em;
+		width: calc(100% - 4em);
+		border-width: 0 0 2px 0;
+		border-color: $inactive-text;
+		border-style: solid;
+		margin: auto 0;
+		outline: none;
+		color: $inactive-text;
+		display: flex;
+	}
+}
