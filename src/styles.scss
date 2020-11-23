@@ -72,6 +72,20 @@ html {
 				width: 25%;
 				height: 100%;
 			}
+
+			.icon {
+				svg {
+					fill: $link-tint;
+				}
+			}
+
+			.active {
+				.icon {
+					svg {
+						fill: $link-color;
+					}
+				}
+			}
 		}
 	}
 }
