@@ -10,7 +10,7 @@ import icons from "../../../../../constants/icon-constants";
 })
 export class SearchComponent implements OnInit {
 	public readonly searchIcon: SafeHtml = this.utils.makeSvgCodeSafe(
-		icons.SEARCH
+		icons.SEARCH_ICON
 	);
 
 	constructor(private utils: Utils) {}

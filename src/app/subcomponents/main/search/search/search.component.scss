@@ -1,8 +1,8 @@
 @import "../../../../../assets/global-style-variables/variables.scss";
 
 .search-box {
-	background-color: rgba(255, 255, 255, 0.3);
-	border: 2px solid rgba(255, 255, 255, 0.5);
+	background-color: $transparent-white;
+	border: 2px solid $body-background-color;
 	border-radius: 2em;
 	height: 100%;
 	width: 100%;
@@ -11,13 +11,20 @@
 	justify-content: space-between;
 	padding: 0 2em;
 
+	&:focus,
+	&:focus-within {
+		input {
+			color: $link-color;
+		}
+	}
+
 	.search-icon {
 		background: transparent;
 		width: 3em;
 		height: 3em;
 		overflow: hidden;
 		display: flex;
-		margin: auto 0;
+		margin: auto 0 auto -1em;
 	}
 
 	input {
@@ -26,13 +33,11 @@
 		padding: 0.3em;
 		height: 60%;
 		line-height: 1em;
-		width: calc(100% - 4em);
-		border-width: 0 0 2px 0;
-		border-color: $inactive-text;
-		border-style: solid;
+		width: calc(100% - 1em);
+		border: none;
 		margin: auto 0;
 		outline: none;
-		color: $inactive-text;
+		color: $link-tint;
 		display: flex;
 	}
 }
