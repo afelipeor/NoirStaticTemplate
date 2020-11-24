@@ -13,4 +13,18 @@
 		height: 100%;
 		display: flex;
 	}
+
+	.button-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: end;
+
+		button {
+			border: none;
+			display: flex;
+			background: transparent;
+			margin: auto 0.5em;
+			cursor: pointer;
+		}
+	}
 }

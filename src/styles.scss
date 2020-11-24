@@ -73,6 +73,20 @@ html {
 				height: 100%;
 			}
 
+			button {
+				svg {
+					fill: $link-color;
+					margin: auto;
+				}
+
+				&:hover {
+					svg {
+						stroke: $link-color;
+						stroke-width: 2px;
+					}
+				}
+			}
+
 			.icon {
 				svg {
 					fill: $link-tint;

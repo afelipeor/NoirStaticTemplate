@@ -1,7 +1,15 @@
 <div class="search-bar-container">
 	<app-search></app-search>
 	<div class="button-container">
-		<button id="notificationButton" class="notification-button"></button>
-		<button id="moreOptionsButton" class="more-options-button"></button>
+		<button
+			id="notificationButton"
+			class="notification-button"
+			[innerHTML]="settingsIcon"
+		></button>
+		<button
+			id="moreOptionsButton"
+			class="more-options-button"
+			[innerHTML]="hamburgerIcon"
+		></button>
 	</div>
 </div>

@@ -9,10 +9,6 @@ nav {
 
 	a {
 		text-decoration: none;
-
-		&:visited {
-			color: $link-color;
-		}
 	}
 
 	.branding-container {
@@ -50,8 +46,18 @@ nav {
 			border-left-width: 0.5em;
 			border-left-color: transparent;
 
+			&:hover {
+				stroke: $link-tint;
+				stroke-width: 1px;
+			}
+
 			&.active {
 				border-left-color: $link-color;
+
+				&:hover {
+					stroke: $link-color;
+				}
+
 				.main-menu-links {
 					color: $link-color;
 					.nav-name {
@@ -72,8 +78,6 @@ nav {
 				color: $inactive-text;
 
 				&:hover {
-					border-left-color: $link-color;
-
 					.nav-name {
 						font-weight: 600;
 					}
