@@ -1,1 +1,8 @@
-<p>dashboard works!</p>
+<h1 class="tab-title">Dashboard</h1>
+
+<div class="card-container">
+	<app-card
+		*ngFor="let cardType of cardList"
+		(cardType)="(cardType)"
+	></app-card>
+</div>

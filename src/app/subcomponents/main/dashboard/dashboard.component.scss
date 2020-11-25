@@ -1,0 +1,19 @@
+app-dashboard {
+	width: 100%;
+	height: auto;
+}
+.card-container {
+	display: flex;
+	flex-direction: row;
+	width: inherit;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin-top: 3em;
+
+	app-card {
+		display: flex;
+		flex-direction: row;
+		width: max-content;
+		height: max-content;
+	}
+}

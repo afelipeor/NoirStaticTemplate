@@ -1,0 +1,12 @@
+@import "../../../../assets/global-style-variables/variables.scss";
+
+.card {
+	min-width: 20%;
+	min-height: 15em;
+	display: flex;
+	flex-direction: column;
+	background-color: $transparent-white;
+	border: 1px solid $body-border-color;
+	border-radius: 2em;
+	margin: 1em 0.5em;
+}

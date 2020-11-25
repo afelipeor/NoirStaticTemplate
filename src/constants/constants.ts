@@ -13,5 +13,6 @@ const constants = {
 		new MainMenuDto("Profile", icons.PROFILE_ICON, "/profile"),
 		new MainMenuDto("Payments", icons.PAYMENTS_ICON, "/payment"),
 	],
+	DASHBOARD_CARD_LIST: ["balance", "exchange_rates", "history", "efficiency"],
 };
 export default constants;
