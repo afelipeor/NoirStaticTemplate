@@ -1,3 +1,4 @@
+import { MainService } from "./../services/main.service";
 import { Component, OnInit } from "@angular/core";
 
 @Component({
@@ -6,7 +7,12 @@ import { Component, OnInit } from "@angular/core";
 	styleUrls: ["./main.component.scss"],
 })
 export class MainComponent implements OnInit {
-	constructor() {}
+	public showDetails = false;
+	constructor(private mainService: MainService) {}
 
 	ngOnInit(): void {}
+
+	public toggleDetails(): boolean {
+		return (this.showDetails = this.mainService.toggleDetails());
+	}
 }
