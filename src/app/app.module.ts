@@ -16,6 +16,10 @@ import { TransactionComponent } from "./subcomponents/main/transaction/transacti
 import { ProfileComponent } from "./subcomponents/main/profile/profile.component";
 import { PaymentComponent } from "./subcomponents/main/payment/payment.component";
 import Utils from "../utils/utils";
+import { BalanceComponent } from './subcomponents/main/dashboard/dashboard-cards/balance/balance.component';
+import { ExchangeRatesComponent } from './subcomponents/main/dashboard/dashboard-cards/exchange-rates/exchange-rates.component';
+import { HistoryComponent } from './subcomponents/main/dashboard/dashboard-cards/history/history.component';
+import { EfficiencyComponent } from './subcomponents/main/dashboard/dashboard-cards/efficiency/efficiency.component';
 
 @NgModule({
 	declarations: [
@@ -32,6 +36,10 @@ import Utils from "../utils/utils";
 		TransactionComponent,
 		ProfileComponent,
 		PaymentComponent,
+		BalanceComponent,
+		ExchangeRatesComponent,
+		HistoryComponent,
+		EfficiencyComponent,
 	],
 	imports: [BrowserModule, AppRoutingModule],
 	providers: [Utils],
