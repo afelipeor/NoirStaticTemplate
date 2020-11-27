@@ -20,6 +20,7 @@ import { BalanceComponent } from './subcomponents/main/dashboard/dashboard-cards
 import { ExchangeRatesComponent } from './subcomponents/main/dashboard/dashboard-cards/exchange-rates/exchange-rates.component';
 import { HistoryComponent } from './subcomponents/main/dashboard/dashboard-cards/history/history.component';
 import { EfficiencyComponent } from './subcomponents/main/dashboard/dashboard-cards/efficiency/efficiency.component';
+import { CardDirective } from './card.directive';
 
 @NgModule({
 	declarations: [
@@ -40,6 +41,7 @@ import { EfficiencyComponent } from './subcomponents/main/dashboard/dashboard-ca
 		ExchangeRatesComponent,
 		HistoryComponent,
 		EfficiencyComponent,
+		CardDirective,
 	],
 	imports: [BrowserModule, AppRoutingModule],
 	providers: [Utils],
