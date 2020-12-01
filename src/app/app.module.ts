@@ -16,11 +16,11 @@ import { TransactionComponent } from "./subcomponents/main/transaction/transacti
 import { ProfileComponent } from "./subcomponents/main/profile/profile.component";
 import { PaymentComponent } from "./subcomponents/main/payment/payment.component";
 import Utils from "../utils/utils";
-import { BalanceComponent } from './subcomponents/main/dashboard/dashboard-cards/balance/balance.component';
-import { ExchangeRatesComponent } from './subcomponents/main/dashboard/dashboard-cards/exchange-rates/exchange-rates.component';
-import { HistoryComponent } from './subcomponents/main/dashboard/dashboard-cards/history/history.component';
-import { EfficiencyComponent } from './subcomponents/main/dashboard/dashboard-cards/efficiency/efficiency.component';
-import { CardDirective } from './card.directive';
+import { BalanceComponent } from "./subcomponents/main/dashboard/dashboard-cards/balance/balance.component";
+import { ExchangeRatesComponent } from "./subcomponents/main/dashboard/dashboard-cards/exchange-rates/exchange-rates.component";
+import { HistoryComponent } from "./subcomponents/main/dashboard/dashboard-cards/history/history.component";
+import { EfficiencyComponent } from "./subcomponents/main/dashboard/dashboard-cards/efficiency/efficiency.component";
+import { CardDirective } from "./card.directive";
 
 @NgModule({
 	declarations: [
@@ -45,6 +45,7 @@ import { CardDirective } from './card.directive';
 	],
 	imports: [BrowserModule, AppRoutingModule],
 	providers: [Utils],
+	entryComponents: [BalanceComponent],
 	bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -3,6 +3,6 @@
 <div class="card-container">
 	<app-card
 		*ngFor="let cardType of cardList"
-		(cardType)="(cardType)"
+		[cardType]="cardType"
 	></app-card>
 </div>

@@ -18,9 +18,7 @@ export class NavigationSidebarComponent implements OnInit {
 
 	constructor(private utils: Utils) {}
 
-	ngOnInit(): void {
-		console.log("annualReportIcon:", this.annualReportIcon);
-	}
+	ngOnInit(): void {}
 
 	public makeSvgCodeSafe(svgString: string): SafeHtml {
 		return this.utils.makeSvgCodeSafe(svgString);
